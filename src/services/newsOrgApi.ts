@@ -1,5 +1,6 @@
 import { Category, News } from "@/types";
 import axios, { AxiosResponse } from "axios";
+import { format } from "date-fns";
 
 export interface Response {
   status: string;
@@ -56,8 +57,8 @@ export const getArticlesFromNewsOrgAPI = async (
   }
 
   if (date) {
-    params.from = date.toISOString().split("T")[0]; // Format date to YYYY-MM-DD
-    params.to = date.toISOString().split("T")[0]; // Format date to YYYY-MM-DD
+    params.from = format(date, "yyyy-MM-dd"); // Format date to YYYY-MM-DD
+    params.to = format(date, "yyyy-MM-dd");
   }
 
   try {

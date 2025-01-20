@@ -3,7 +3,7 @@
 
 .tabs {
   @include flex-center;
-  margin-bottom: 1rem;
+  margin-bottom: 10px;
   background-color: $card-bg;
   border-radius: 8px;
   padding: 0.5rem;
