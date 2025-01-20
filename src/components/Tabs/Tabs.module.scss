@@ -1,0 +1,27 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+.tabs {
+  @include flex-center;
+  margin-bottom: 1rem;
+  background-color: $card-bg;
+  border-radius: 8px;
+  padding: 0.5rem;
+
+  .tab {
+    color: $secondary-text-color;
+    @include button-style;
+    background: transparent;
+    margin: 0 0.5rem;
+
+    &:hover {
+      background-color: $border-color;
+      color: $text-color;
+    }
+
+    &.active {
+      background-color: $primary-color;
+      color: $text-color;
+    }
+  }
+}
