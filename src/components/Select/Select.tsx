@@ -19,7 +19,7 @@ const customStyles: StylesConfig<SelectOption> = {
     ...provided,
     borderRadius: "8px",
     backgroundColor: "#f5f5f5",
-    border: "1px solid black", 
+    border: "1px solid none", 
     padding: "0.25rem",
     boxShadow: "none",
   }),

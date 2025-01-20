@@ -4,7 +4,7 @@ A modern news aggregator that provides personalized, categorized, and multi-sour
 
 ## Features  
 
-  - Fetches news articles from the following APIs:  
+- Fetches news articles from the following APIs:  
   - *News.org*
   - *The New York Times*
   - *The Guardian*
@@ -24,6 +24,8 @@ A modern news aggregator that provides personalized, categorized, and multi-sour
   - Preferred news sources  
 
 - Modern, Responsive UI  
+
+- Live URL: https://news-aggregator-react.vercel.app/
 
 ---
 
@@ -56,6 +58,3 @@ Run the production app with Nginx:
 ```bash
 docker run -p 80:80 news-aggregator:prod
 ```
-
-## Screenshots
-

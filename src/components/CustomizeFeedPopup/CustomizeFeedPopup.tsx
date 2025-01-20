@@ -51,7 +51,7 @@ const CustomizeFeedPopup: React.FC<CustomizeFeedPopupProps> = ({
     <Dialog.Root open={true} onOpenChange={(open) => !open && onClose()}>
       <Dialog.Overlay className="dialog-overlay" />
       <Dialog.Content className="dialog-content">
-        <Dialog.Title className="dialog-title">Customize Feed</Dialog.Title>
+        <Dialog.Title className="dialog-title">Customize News Feed</Dialog.Title>
 
         <div className="dialog-section">
           <h3>Sources</h3>
