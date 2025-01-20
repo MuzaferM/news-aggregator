@@ -139,7 +139,6 @@ header {
     margin-bottom: 10px;
   }
 
-  
   .news-list {
     display: flex;
     flex-direction: column;
@@ -181,5 +180,13 @@ header {
 @media screen and (min-width: 769px) {
   .accordion-container {
     display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .personalized-feed {
+    .customize-feed-button {
+      padding: 8px 4px;
+    }
   }
 }

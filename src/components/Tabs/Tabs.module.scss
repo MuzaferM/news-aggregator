@@ -6,12 +6,13 @@
   margin-bottom: 10px;
   background-color: $card-bg;
   border-radius: 8px;
-  padding: 0.5rem;
+  padding: 8px;
 
   .tab {
     color: $secondary-text-color;
     @include button-style;
     background: transparent;
+    padding: 0.5rem 1rem;
     margin: 0 0.5rem;
 
     &:hover {
@@ -22,6 +23,15 @@
     &.active {
       background-color: $primary-color;
       color: $text-color;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .tabs {
+    .tab {
+      padding: 0.5rem 1rem;
+      margin: 0;
     }
   }
 }
