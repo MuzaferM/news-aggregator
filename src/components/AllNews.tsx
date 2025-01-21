@@ -80,10 +80,14 @@ const AllNews: React.FC = () => {
 
         {/* News Articles */}
         <div className="news-container">
-        {isLoading
-            ? Array.from({ length: 5 }).map((_, index) => (
-                <SkeletonCard key={index} />
-              )
+          {isLoading ? (
+            Array.from({ length: 5 }).map((_, index) => (
+              <SkeletonCard key={index} />
+            ))
+          ) : (!news || news?.length === 0) ? (
+            <div className="no-article-wrapper">
+              <h1>No aricles found, Please check back later.</h1>
+            </div>
           ) : (
             news?.map((article) => (
               <NewsCard

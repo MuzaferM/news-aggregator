@@ -79,6 +79,16 @@ header {
     display: flex;
     gap: 16px;
 
+    .no-article-wrapper {
+      @include flex-center;
+      height: 400px;
+
+      h1 {
+        font-size: 1.25rem;
+        font-weight: 500;
+      }
+    }
+
     &::-webkit-scrollbar {
       width: 8px;
     }
@@ -146,6 +156,16 @@ header {
     overflow: hidden auto;
     display: flex;
     gap: 16px;
+
+    .no-article-wrapper {
+      @include flex-center;
+      height: 400px;
+
+      h1 {
+        font-size: 1.25rem;
+        font-weight: 500;
+      }
+    }
   }
 
   .customize-feed-button {
@@ -173,6 +193,14 @@ header {
     .news-container {
       padding-right: 0;
       width: 100%;
+
+      .no-article-wrapper {
+        height: 100px;
+  
+        h1 {
+          font-size: 1rem;
+        }
+      }
     }
   }
 }

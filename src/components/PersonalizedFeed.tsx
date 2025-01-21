@@ -60,6 +60,11 @@ const PersonalizedFeed: React.FC = () => {
           ? Array.from({ length: 5 }).map((_, index) => (
               <SkeletonCard key={index} />
             ))
+           : (!data || data?.length === 0) ? (
+            <div className="no-article-wrapper">
+              <h1>No aricles found, Please check back later.</h1>
+            </div>
+           )
           : data?.map((article, index) => (
               <NewsCard
                 key={index}
