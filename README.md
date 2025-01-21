@@ -57,3 +57,14 @@ Run the production app with Nginx:
 ```bash
 docker run -p 80:80 news-aggregator:prod
 ```
+---
+
+## Screenshots
+
+![image](https://github.com/user-attachments/assets/0ecf10e7-05b7-46c1-8e82-26fbef2d0d15)
+
+---
+
+![image](https://github.com/user-attachments/assets/128472ca-8f0e-4b40-aa9d-e3d423a28347)
+
+---
