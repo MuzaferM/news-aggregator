@@ -1,6 +1,6 @@
 # News Aggregator Application  
 
-A modern news aggregator that provides personalized, categorized, and multi-sourced news with an intuitive, responsive design.
+A modern news aggregator that provides personalized, categorized, and multi-sourced news.
 
 ## Features  
 
@@ -9,7 +9,6 @@ A modern news aggregator that provides personalized, categorized, and multi-sour
   - *The New York Times*
   - *The Guardian*
 - Search articles by keywords.  
-- Supports fuzzy matching for better search accuracy.  
 
 - Filter articles by categories such as:  
   - Technology  

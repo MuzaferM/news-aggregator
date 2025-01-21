@@ -37,7 +37,7 @@ const AllNews: React.FC = () => {
     if (filters.date) queryParams.set("date", filters.date);
     if (filters.category) queryParams.set("category", filters.category);
     if (filters.source) queryParams.set("source", filters.source);
-    if (filters.searchQuery) queryParams.set("q", filters.searchQuery); // Add searchQuery to URL params
+    if (filters.searchQuery) queryParams.set("q", filters.searchQuery);
     window.history.replaceState(null, "", `?${queryParams.toString()}`);
   }, [filters]);
 

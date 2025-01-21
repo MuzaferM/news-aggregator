@@ -14,6 +14,7 @@ interface UseFetchNewsProps {
  * @param {string} [options.date] - The selected date to filter news articles.
  * @param {Category} [options.category] - The selected category to filter news articles.
  * @param {Source} [options.source] - The selected source to filter news articles.
+ * @param {string} [options.searchQuery] - Search input to search articles by keyword.
  * @returns {Object} - The result of the React Query `useQuery` hook containing the news data, loading state, and error state.
  */
 export function useFetchNews({
@@ -26,7 +27,7 @@ export function useFetchNews({
   // Function to fetch news articles
   function fetchNews() {
     return getNews({
-      query: searchQuery ?? 'all',
+      query: searchQuery ?? 'any',
       date: date ? new Date(date) : undefined,
       category: category,
       source: source,
